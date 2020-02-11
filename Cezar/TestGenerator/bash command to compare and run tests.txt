@@ -1,0 +1,1 @@
+for((i=0;i<=100;i++)); do echo $i; ./gen $i > in$i.txt; ../SplaySolution/cez < in$i.txt > out.txt; ../SquareStructuresSolution/cez < in$i.txt > out2.txt; diff out.txt out2.txt ; done

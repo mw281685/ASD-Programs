@@ -1,0 +1,1 @@
+for((i=0;i<=2;i++)); do echo $i; ./gen $i > in$i.txt; ./cez < in$i.txt > out.txt; ./GosiaCode/cez < in$i.txt > out2.txt; diff out.txt out2.txt ; done
